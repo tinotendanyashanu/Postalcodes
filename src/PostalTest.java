@@ -45,6 +45,13 @@ public class PostalTest
                 }
                 catch (PostalCodeException ex3) {}
             }
+            {
+                try
+                {
+                    code = new OotumliaPostalCode(codeString);
+                }
+                catch (PostalCodeException ex4) {}
+            }
         }
         if (code != null)
             System.out.println(code);

@@ -77,7 +77,7 @@ public abstract class PostalCode
      */
     public String getCode()
     {
-        return code;
+        return code.toLowerCase();
     }
 
     /**

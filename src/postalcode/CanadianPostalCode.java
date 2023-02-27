@@ -55,9 +55,6 @@ public class CanadianPostalCode extends PostalCode
                 || (!Character.isDigit(postCode.charAt(4)))
                 || (!Character.isLetter(postCode.charAt(5)))
                 || (!Character.isDigit(postCode.charAt(6)))
-                || (!Character.isUpperCase(postCode.charAt(0)))
-                || (!Character.isUpperCase(postCode.charAt(2)))
-                || (!Character.isUpperCase(postCode.charAt(5)))
                 || (postCode.length() > 7))
         {
             throwException("Sequence of characters not like A9A 9A9");
@@ -119,6 +116,42 @@ public class CanadianPostalCode extends PostalCode
             case 'X':
                 return "in the Northwest Territories or Nunavut";
             case 'Y':
+                return "in the Yukon Territories";
+            case 'a':
+                return "in Newfoundland";
+            case 'b':
+                return "in Nova Scotia";
+            case 'c':
+                return "in PEI";
+            case 'e':
+                return "in New Brunswick";
+            case 'g':
+                return "in Quebec";
+            case 'h':
+                return "in Metropolitan Montreal";
+            case 'j':
+                return "in Western Quebec";
+            case 'k':
+                return "in Eastern Ontario";
+            case 'l':
+                return "in Central Ontario";
+            case 'm':
+                return "in Metropolitan Toronto";
+            case 'n':
+                return "in Southwestern Ontario";
+            case 'p':
+                return "in Northern Ontario";
+            case 'r':
+                return "in Manitoba";
+            case 's':
+                return "in Saskatchewan";
+            case 't':
+                return "in Alberta";
+            case 'v':
+                return "in British Columbia";
+            case 'x':
+                return "in the Northwest Territories or Nunavut";
+            case 'y':
                 return "in the Yukon Territories";
             default:
                 throwException("Invalid first letter");
